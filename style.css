@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    font-family: Roboto;
+    font-family: FreeSans;
     margin: 0;
 }
 
@@ -21,7 +21,7 @@ body {
 .header .title {
     font-size: 24px;
     color: #F9FAF8;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .header ul {
@@ -42,20 +42,23 @@ body {
 }
 
 .section1 {
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #1F2937;
     gap: 48px;
-    flex: 1;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
-.section1 .hero-main {
+.hero-main {
     font-size: 48px;
     color:#F9FAF8;
-    font-weight: 900;
+    font-weight: 800;
 }
 
-.section1 .hero-secondary {
+.hero-secondary {
     font-size: 18px;
     color: #E5E7EB;
     margin: 8px 0px 16px ;
@@ -74,16 +77,91 @@ body {
 .section1 img {
     width: auto;
     height: 300px;
+    border-radius: 8px;
 }
 
 .section2 {
     flex: 1;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.info-header {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+.section2 .container {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section2 img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #1F2937;
+    border-radius: 8px;
 }
 
 .section3 {
     flex: 1;
+    background-color:#E5E7EB;
+    color: #1F2937;
+    padding: 80px 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    text-align: justify;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.author {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: end;
+    font-weight: 800;
 }
 
 .section4 {
     flex: 1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 450px;
+    background-color: #3882f6;
+    margin: 80px 300px;
+    padding: 50px 0px;
+    color: white;
+    border-radius: 8px;
+}
+
+.company {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.slogan {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.section4 button {
+    background: #3882f6;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
 }
